@@ -7,6 +7,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 resp = client.chat.completions.create(
     model="gpt-4o-mini",
-    messages=[{"role": "user", "content": "用一句话介绍你自己"}],
+    temperature=1,
+    messages=[{"role": "user", "content": "给沈杨（男）李雨伦（女）的男孩儿取名，并解释为什么这么取"}],
 )
 print(resp.choices[0].message.content)
