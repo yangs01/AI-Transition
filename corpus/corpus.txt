@@ -1,0 +1,182 @@
+STRENGTH DESIGN FOR REINFORCED CONCRETE HYDRAULIC STRUCTURES
+
+1. Purpose. This manual provides guidance for designing reinforced concrete hydraulic
+structures by the strength design method. Plain concrete and prestressed concrete are not
+covered in this manual.
+
+2. Applicability. This manual applies to all Headquarters, U.S. Army Corps of Engineers
+(HQUSACE)-commands having civil works responsibilities. The user of this Engineer Manual
+(EM) is responsible for seeking opportunities to incorporate the Environmental Operating
+Principles (EOPs) wherever possible. A listing of the EOPs is available at:
+http://www.usace.army.mil/Missions/Environmental/EnvironmentalOperatingPrinciples.aspx
+
+3. Distribution Statement. Approved for public release; distribution is unlimited.
+
+4. References. Appendix A lists required and related publications.
+
+5. Discussion. This manual covers requirements for design of reinforced concrete hydraulic
+structures by the strength design method. It is applicable to all hydraulic structures. The manual
+contains provisions for design of structures that are satisfactory for both serviceability and
+ultimate strength. Industry design and construction standards have been adopted in this manual
+3.2.1.2. Design should generally be performed using a wind velocity with a 10-year return
+ period for Usual loads and 100-year return period for Unusual.
+
+ 3.3. Required Strength.
+
+ 3.3.1. Design Strength. The required strength computed from the effects of factored loads
+shall be less than the design strength, calculated as:
+
+ ∑ 𝛾𝛾𝑖𝑖 𝐿𝐿𝑛𝑛𝑖𝑖 ≤ 𝜑𝜑𝑅𝑅𝑛𝑛 (3-1)
+where:
+
+ ∑ 𝛾𝛾𝑖𝑖 𝐿𝐿𝑛𝑛𝑖𝑖 = U = required strength, the effect of factored loads
+ ɣi = load factors that account for bias and variability in loads to which they are assigned
+ Lni = nominal (code-specified) load effects
+ φ = resistance factor from ACI 318.
+ Rn = nominal resistance from ACI 318 and Chapter 4.
+
+ 3.3.2. Load Factors. Load factors for load and resistance factor design are as described in
+this section. Generic load combinations are provided. Exact load cases must be determined by
+the design engineer for each structure type. Examples of load cases for typical structures are
+shown in Appendix E.
+
+ 3.3.2.1. Minimum load factors for design of RCHS are shown in Table 3-1. Consultation with
+and approval by CECW-CE is required for loads not covered in this table:
+
+ 3.3.2.2. General load combinations.
+
+ 3.3.2.2.1. Serviceability:
+
+ Usual U = 2.2 [Σ Lp + Σ LtU + LdU] (3-2)
+
+ Unusual U = 1.6 [Σ Lp + LtNi or LdNi + Σ LtU + LdU*] (3-3)
+
+ 3.3.2.2.2. Serviceability – For Members in Direct Tension:
+
+ Usual U = 2.8 [Σ Lp + Σ LtU + LdU] (3-4)
+
+ Unusual U = 2.0 [Σ Lp + (LtNi or LdNi) + Σ LtU + LdU*] (3-5)
+
+ 3.3.2.2.3. Strength
+
+ U = Σ ɣX Lp + (ɣX LtXi or ɣX LdXi) + Σ 1.0 LtU + 1.0 LdU * (3-6)
+
+*
+ Dynamic companion loads are not used when the principal action load is a dynamic load (LdN or LdX).
+
+30 Nov 16
+
+ 3.3.2.2.4. Notes on Load Combinations:
+
+ 1. Applicable loads to be combined are site specific. Examples for common structures are
+ shown in Appendix E.
+
+ 2. Lp, Lt, and Ld designate Permanent, Temporary, and Dynamic loads, respectively, as
+ previously defined.
+
+ 3. Subscripts U, N, and X designate Usual, Unusual, and Extreme load categories,
+ respectively.
+
+ 4. Loads with subscript “i” are principal action loads used individually (one at a time) in
+ load cases.
+
+ 5. Loads are combined only when it is possible for them to occur at the same time.
+
+ 6. For principal action loads that are correlated, such as hydrostatic and wave forces from
+ storm-created surge and wave, the applied principal action load need not be combined
+ with other temporary or dynamic loads.
+
+ Table 3-1. Minimum Load Factors.
+
+ Limit State Serviceability6 Strength
+ Load Category U. Usual N. Unusual X. Extreme
+ Return Period, years - Critical 10 10-750 > 750
+ Return Period, years - Normal 10 10-300 > 300
+ Permanent Loads, Lp ɣU ɣN ɣX
+ 5 5
+ Dead D 2.2 1.6 1.2 , 0.92
+ 1
+
+ Vertical Earth EV 2.25 1.65 1.351, 1.02
+ Lateral Earth EH 2.25 1.65 See Note 3
+ 5 5
+ Hydrostatic (Companion Load) Hs 2.2 1.6 1.0
+ 5 5
+ Gravity (Mud/Ice) G 2.2 1.6 1.61, 02
+ Temporary Loads, Lt ɣU ɣN ɣX
+ Peak Hydrostatic - Flood, Drought, Hs
+ 2.25 1.65 1.0 or 1.34
+ Surge, Maintenance (Principal Load)
+ Thermal Expansion of Ice IX NA 1.65 1.0 or 1.34
+ Soil Surcharge ES 2.25 1.65 1.0 or 1.34
+ Operating Equipment Q 2.25 1.65 1.0 or 1.34
+ Live Load (vertical) L 2.25 1.65 ASCE 77
+ Self Straining T 2.25 1.65 ACI 3187
+ Vehicle Live Loads V 2.25 1.65 AASHTO7
+ Dynamic Loads, Ld ɣU ɣN ɣX
+ 5 5
+ Hydrodynamic (except seismic) Hd 2.2 1.6 1.0 or 1.34
+ Wave Hw 2.25 1.65 1.0 or 1.34
+
+ 30 Nov 16
+
+ Table 3-1. Minimum Load Factors (Continued).
+ Limit State Serviceability6 Strength
+ 5
+ Debris/Floating Ice Impact I 2.2 1.65 1.0 or 1.34
+ Barge/Boat Impact IM 2.25 1.65 1.0 or 1.34
+ Wind W NA 1.65 ASCE 77
+ Earthquake EQ NA Para 3.3.3 Para. 3.3.3
+ 5
+ Hawser B NA 1.6 NA
+ Table 3-1 Notes:
+ 1. Applied when loads add to the predominant load effect.
+ 2. Applied when loads subtract from the predominant load effect.
+ 3. Load Factors for Lateral Earth Pressure:
+ Structures using at-rest pressure for design
+ Driving pressure = 1.35; Resisting pressure = 0.9.
+ All other structures
+ Driving (Active) pressure = 1.5; Resisting (Passive) Pressure = 0.5
+ Dynamic analysis (response spectra and time history) of earthquake (at-rest pressure) = 1.0
+ 4. Temporary and dynamic Extreme loads shall be designed with:
+ Load factor =1.3
+ Loads that are physically limited with return periods lower than 3,000 years for normal
+ structures or 10,000 years for critical structures.
+ Loads for which return period cannot be determined.
+ Load Factor = 1.0
+ Loads that are not limited, for which return period can be determined, with design with
+ return periods greater than or equal to 3,000 years for normal structures or 10,000 years for
+ critical structures.
+ 5. For members in direction tension (net tension across the entire cross section): Usual load factor = 2.8,
+ Unusual load factor = 2.0.
+ 6. Load factors for serviceability limit states are intended to provide designs with stresses in the concrete and
+ reinforcing steel that limit cracking under service loads. The load factors are not reliability based.
+ 7. Where other standards are referenced, load cases and load factors from those standards will be used for
+ design when those loads are primary loads. See load descriptions for details.
+
+ 3.3.3. Earthquake Load (Effects).
+
+ 3.3.3.1. General. Earthquake loads are considered either Unusual or Extreme due to their low
+probability of occurrence and duration. Yet, their low probability of occurrence also allows them to
+be combined with normal operating loads, such as coincidental pool, when developing load
+combinations. The definitions of normal/coincidental pool and earthquake-induced loads are
+provided in EM 1110-2-2100. Other static loads typically consist of self-weight, uplift, internal and
+external water pressure, and lateral soil pressures.
+
+ 3.3.3.2. EQ = Earthquake load.
+
+ 3.3.3.2.1. In developing earthquake loads, different earthquakes are considered when
+designing for serviceability and strength. The Operating Basis Earthquake (OBE) is an Unusual
+load used for serviceability design. The Maximum Design Earthquake (MDE) is an Extreme
+
+30 Nov 16
+
+load used for strength design. For critical structures, MDE is the same as Maximum Credible
+Earthquake (MCE). The design earthquakes, ground motions, and performance requirements for
+the OBE, MDE, and MCE are defined in Engineer Regulation (ER) 1110-2-1806.
+
+ 3.3.3.2.2. The standard seismic spectral accelerations and ground motions values can be
+obtained from published U.S. Geological Survey (USGS) spectral acceleration maps and USGS
+web based Seismic Hazard Analysis Tools. The method to develop standard response spectra
+and effective peak ground acceleration (EPGA) for desired return periods for OBE and MDE at
+the project site is described in EM 1110-2-6053.

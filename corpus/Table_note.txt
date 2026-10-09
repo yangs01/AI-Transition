@@ -1,0 +1,1 @@
+在正常使用极限状态（Usual serviceability conditions）下，恒载（dead load, D）的最小荷载系数为 2.2。

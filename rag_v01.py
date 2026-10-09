@@ -1,3 +1,4 @@
+import re
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
@@ -6,12 +7,11 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
-def load_docs(path, chunk_size=5):
-    """把 txt 按每 chunk_size 行切成片段"""
+def load_docs(path):
+    """按句子切分：每个句子一个片段，语义完整"""
     with open(path, "r", encoding="utf-8") as f:
-        lines = [ln.strip() for ln in f if ln.strip()]
-    return ["\n".join(lines[i:i + chunk_size])
-            for i in range(0, len(lines), chunk_size)]
+        text = f.read()
+    return [s.strip() for s in re.split(r"(?<=[。？！])", text) if s.strip()]
 
 
 def retrieve(query, docs, top_k=3):
